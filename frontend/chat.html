@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+
+<title>
+Chat
+</title>
+
+
+<link rel="stylesheet"
+href="css/style.css">
+
+
+<script src=
+"https://cdn.socket.io/4.7.5/socket.io.min.js">
+</script>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="container">
+
+
+
+<!-- Sidebar -->
+
+
+<div class="sidebar">
+
+
+<h3>
+Chats
+</h3>
+
+
+
+<div id="conversation-list">
+
+
+</div>
+
+
+
+<button>
++ New Chat
+</button>
+
+
+</div>
+
+
+
+
+<!-- Chat Area -->
+
+
+<div class="chat-area">
+
+
+<div class="chat-header">
+
+Conversation
+
+</div>
+
+
+
+<div id="messages">
+
+
+</div>
+
+
+
+<div class="input-area">
+
+
+<input
+id="message"
+placeholder="Type message..."
+>
+
+
+<button onclick="sendMessage()">
+Send
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+<script src="js/chat.js"></script>
+
+
+</body>
+
+
+</html>
