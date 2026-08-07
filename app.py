@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 from flask_cors import CORS
 
@@ -47,7 +47,16 @@ socket_events(socketio)
 @app.route("/")
 def home():
 
-    return "Server Running"
+    return render_template(
+        "login.html"
+    )
+
+@app.route("/chat")
+def chat():
+
+    return render_template(
+        "chat.html"
+    )
 
 
 
