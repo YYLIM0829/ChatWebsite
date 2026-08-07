@@ -10,10 +10,7 @@
 Chat
 </title>
 
-
-<link rel="stylesheet"
-href="css/style.css">
-
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
 <script src=
 "https://cdn.socket.io/4.7.5/socket.io.min.js">
@@ -109,7 +106,7 @@ Send
 
 
 
-<script src="js/chat.js"></script>
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
 
 
 </body>
