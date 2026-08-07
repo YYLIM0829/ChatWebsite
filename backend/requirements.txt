@@ -1,0 +1,9 @@
+Flask
+Flask-Cors
+Flask-SocketIO
+supabase
+python-dotenv
+PyJWT
+gunicorn
+eventlet
+Werkzeug
