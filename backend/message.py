@@ -2,6 +2,11 @@ from flask import Blueprint, request, jsonify
 
 from database import supabase
 
+message = Blueprint(
+    "message",
+    __name__
+)
+
 @message.route(
 "/message/send",
 methods=["POST"]
